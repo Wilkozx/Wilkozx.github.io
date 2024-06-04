@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    background-image: url('background/stars.png');
+    animation: translate-background 50s linear infinite;
+    font-family: "Staatliches", sans-serif;
+    margin: 0;
+}
+
+@keyframes translate-background {
+    0% {
+        background-position: center 0%;
+    }
+    100% {
+        background-position: center 1000px;
+    }
+}
+
+main {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1300px;
+    padding-top: 0;
+}
+
+.navbar {
+    background-color: #16191d80;
+    overflow: hidden;
+    display: block;
+    border-bottom: #696969 1px solid;
+}
+
+.navbar h1 {
+    float: inline-start;
+    padding-left: 25px;
+    font-family: "VT323", monospace;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav-opts a {
+    float: right;
+    color: #b1b1b1;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding-right: 25px;
+    text-align: center;
+}
+
+#nav-opts a:hover {
+    color: #fff278;
+    scale: 1.05;
+}
+
+#social-links img {
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+.widgets {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: #696969 1px solid;   
+    border-bottom: #696969 1px solid;   
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.widgets .widget-small:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    scale: 1.02;
+}
+
+.widget-small {
+    background-image: url('background/map_art.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 15px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    filter:saturate(0.5);
+    transition: 0.5s;
+}
+
+#widget-two {
+    background-image: url('background/map2_art.jpg');
+}
+
+#widget-three {
+    background-image: url('background/map3_art.jpg');
+}
+
+.widget-small .widget-textarea {
+    background-color: #16191d60;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: 0.35s;
+    text-align: center;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.widget .widget-textarea {
+    background-color: #16191d60;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: 0.35s;
+    text-align: center;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#widget-one-title {
+    color: #ffffff;
+    display: block;
+    font-size: 3em;
+    text-shadow: #16191d 0px 5px 5px;
+}
+
+#widget-one-desc {
+    color: #ffffff;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.widget-small:hover .widget-textarea {
+    height: 340px;
+    transition: 0.35s;
+    backdrop-filter: blur(3px);
+}
+
+.widget-small:hover #widget-details {
+    display: block;
+}
+
+.widget-medium {
+    background-image: url('background/map_art.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 15px;
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    filter:saturate(0.5);
+    transition: 0.5s;
+}
+
+.widgets .widget-medium:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    scale: 1.02;
+}
+
+#carousel {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1300px;
+    height: 550px;
+}
+
+.carousel-item {
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 15px;
+    filter:saturate(0.6);
+    transition: 0.5s;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#carousel-1 {
+    position: absolute;
+    display: none;
+}
+
+#carousel-1.active {
+    display: block;
+}
+
+#carousel-2 {
+    position: absolute;
+    display: none;
+}
+
+#carousel-2.active {
+    display: block;
+}
+
+#carousel-3 {
+    position: absolute;
+    display: none;
+}
+
+#carousel-3.active {
+    display: block;
+}
+
+/* MAKE IT PHONE AACCESSIBLE */
+@media screen {
+
+    
+}
+
